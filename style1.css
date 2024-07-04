@@ -123,17 +123,17 @@ svg.key {
     visibility: visible;
   }
   99% {
-    --animation-sentence: "mending pergi aja, oke?";
+    --animation-sentence: "Halo.., apa kabar?? ⭐";
     opacity: 0;
     visibility: hidden;
   }
   100% {
-    --animation-sentence: "mending ngerjain hal lain...";
+    --animation-sentence: "moodnya udah membaik kah?";
   }
 }
 @keyframes showNewText {
   2% {
-    --animation-sentence: "mending ngerjain hal lain...";
+    --animation-sentence: "ini ada sedikit hadiah..";
     opacity: 1;
     visibility: visible;
   }
@@ -142,12 +142,12 @@ svg.key {
     visibility: visible;
   }
   99% {
-    --animation-sentence: "mending ngerjain hal lain...";
+    --animation-sentence: "mungkin bukan berupa barang";
     opacity: 0;
     visibility: hidden;
   }
   100% {
-    --animation-sentence: "Yaudah deh, nih kuncinya.. bawel bet jadi orang ";
+    --animation-sentence: "Nih kuncinya, masuknya ucapin salam ya 😮‍💨 ";
   }
 }
 @keyframes showFinalText {

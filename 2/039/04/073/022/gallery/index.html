@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery Yuna 🖼️</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/4.jpg" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cat"></div>
+
+      <main>
+        <div id="gallery">
+          <figure>
+            <img
+              src="assets/1.jpg"
+              alt="Pink and blue clouds at sunset. "
+              title="ikoo"
+            />
+            <figcaption>8 PM, Summer</figcaption>
+          </figure>
+          <!-- <figure>
+          <div>
+            <div>
+              <h2>Note</h2>
+              <p>Scroll Animation!</p>
+              <p>
+                <br /><small
+                  >Related work : <br /><a target="_blank" href="#"
+                    >Hover animation version</a
+                  ></small
+                >
+              </p>
+            </div>
+          </div>
+        </figure> -->
+          <figure>
+            <img
+              src="assets/2.jpg"
+              alt="Low angle view up into a sky filled with deep blue clouds. "
+              title="ikoo"
+            />
+            <figcaption>3 PM, Winter</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/3.jpg"
+              alt="Heavy gray clouds in the sky. "
+              title="ikoo"
+            />
+            <figcaption>10 AM, Summer Storm</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/4.jpg"
+              alt="Deep orange clouds at sunset. "
+              title="ikoo"
+            />
+            <figcaption>5 PM, Autumn</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/5.jpg"
+              alt="Clouds in shades of dark blue and magenta at sunset. "
+              title="ikoo"
+            />
+            <figcaption>7 PM, Spring</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/6.jpg"
+              alt="Clouds in shades of blue and gold at sunrise. "
+              title="ikoo"
+            />
+            <figcaption>6:30 AM, Summer</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/7.jpg"
+              alt="clouds and sky during daytime"
+              title="ikoo"
+            />
+            <figcaption>6 AM, Autumn</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/8.jpg"
+              alt="white clouds and blue sky. "
+              title="ikoo"
+            />
+            <figcaption>5 PM, Summer</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/9.jpg" alt="cloudy sky. " title="ikoo" />
+            <figcaption>11 AM, Summer</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/10.jpg"
+              alt="rainbow during daytime. "
+              title="ikoo"
+            />
+            <figcaption>2 PM, Spring Rainbow</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/11.jpg" alt="white sea of clouds. " title="ikoo" />
+            <figcaption>4 AM, Autumn</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/12.png" alt="white sea of clouds. " title="ikoo" />
+            <figcaption>5 PM, Rainy</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/2.jpg" alt="white sea of clouds. " title="ikoo" />
+            <figcaption>12 AM, Summer</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/13.webp"
+              alt="white sea of clouds. "
+              title="ikoo"
+            />
+            <figcaption>14 PM, Fall</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/15.webp"
+              alt="white sea of clouds. "
+              title="ikoo"
+            />
+            <figcaption>4 PM, Autumn</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/16.webp"
+              alt="white sea of clouds. "
+              title="ikoo"
+            />
+            <figcaption>4 PM, Spring</figcaption>
+          </figure>
+        </div>
+      </main>
+
+      <footer id="info">
+        Penggunaan segala gambar murni hanya untuk keperluan pengkodingan <br />
+        <a target="_blank" href="https://github.com/Ame0thyst"
+          >Gilang Wiko Wicaksono</a
+        >
+      </footer>
+    </div>
+    <audio id="background-music" autoplay>
+      <source src="assets/song.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- script untuk play lagu-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const container = document.querySelector(".container");
+        const cat = document.querySelector(".cat");
+
+        function moveCat() {
+          // Menghitung posisi acak di dalam container
+          const x = Math.random() * (container.offsetWidth - cat.offsetWidth);
+          const y = Math.random() * (container.offsetHeight - cat.offsetHeight);
+
+          // Mengatur posisi kucing
+          cat.style.left = x + "px";
+          cat.style.top = y + "px";
+        }
+
+        // Panggil fungsi moveCat setiap 3 detik
+        setInterval(moveCat, 3000);
+      });
+      // Select the audio element
+      var audio = document.getElementById("background-music");
+
+      // Function to restart audio when it ends
+      function restartAudio() {
+        audio.currentTime = 0; // Restart from the beginning
+        audio.play(); // Start playing again
+      }
+
+      // Event listener to restart audio when it ends
+      audio.addEventListener("ended", function () {
+        restartAudio();
+      });
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
