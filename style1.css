@@ -5,7 +5,7 @@
   --color-theme: #f1eedb;
   --color-bg: #282b24;
 
-  --animation-sentence: "Mending pergi aja, oke?";
+  --animation-sentence: "Halo.., apa kabar?? ⭐";
   --animation-duration: 40s;
 }
 * {
@@ -123,7 +123,7 @@ svg.key {
     visibility: visible;
   }
   99% {
-    --animation-sentence: "Halo.., apa kabar?? ⭐";
+    --animation-sentence: "tidurnya nyenyak?";
     opacity: 0;
     visibility: hidden;
   }
