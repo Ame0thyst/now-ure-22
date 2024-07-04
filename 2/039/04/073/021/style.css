@@ -1,0 +1,150 @@
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+p {
+  margin: 0 0;
+  position: absolute;
+  font: 16px Verdana;
+  color: #eee;
+  height: 25px;
+  top: calc(100vh - 30px);
+  text-shadow: 0 0 2px white;
+}
+p a {
+  text-decoration: none;
+  color: #aaa;
+}
+span {
+  font-size: 11px;
+}
+p > a:first-of-type {
+  font-size: 20px;
+}
+body {
+  overflow: hidden;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+* {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #e0e1eb;
+  border-radius: 1.625rem;
+}
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #7c7b7b;
+}
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #6d6c6c;
+  border-right: 0.125rem solid #585858;
+  transform: rotate(45deg);
+}
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #f80d6f;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #ec0f6b;
+}
+
+@supports (display: grid) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.625rem;
+    grid-template-areas: ". main main ." ". main main .";
+  }
+
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    height: 100vh; /* Atur tinggi kontainer agar tombol bisa diposisikan di bagian bawah */
+    font-family: "Mukta", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    background: #f3f8fa;
+  }
+}
+
+button.learn-more {
+  position: absolute;
+  bottom: 1rem; /* Jarak dari bagian bawah kontainer */
+  left: 50%; /* Posisikan tombol di tengah secara horizontal */
+  transform: translateX(-50%);
+  background-color: rgb(170, 165, 165);
+  border-radius: 18px; /* Geser tombol ke kiri setengah dari lebar tombol agar benar-benar di tengah */
+}
