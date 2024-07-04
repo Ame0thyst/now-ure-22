@@ -60,8 +60,10 @@ var Fake = [
   "Udah bobo belum nih?",
   "Pasti ngira kalau aku bakal lupa kannnn.. kwkwkw",
   "Sebenernya aku ga lupa, aku belum siap ngerjain ini... jadi gaenak kalau cuma ngucapi Happy birthday aja.",
-  "Gimana.. kamu suka ga.. uadh ada foto kamu nya tuh heheeh",
+  "Gimana.. kamu suka ga.. ada foto kamu nya tuh heheeh",
   "tapi tenang, aku ga nyomot kok, pake foto yang pernah kamu kasi hihih",
+  "untuk beberapa bagian aku comot hehe, maap ga izin dlu",
+  "jadi izinin yah. kan ini hari spesial.. hihih",
   "Selamat Ulang tahun ya yunaa   wkwkkw. semoga segalanya dilancarkan, dapet yang terbaik dan makin sabarrrrrrrrr. kuliahnya harus makin rajin.. ",
   "ingatloh, semester depan janji ya jangan banyak absen lagi 😏",
   "Juga semoga dengan bertambahnya umur kamu, semoga kamu makin dikuatkan dengan semuanya",
@@ -69,7 +71,7 @@ var Fake = [
   "Apa lagi ya... udah si itu aja.. oh iya, jangan terlalu lelah yaa.. sering sering hilingg.. ya ga tiap minggu juga",
   "jangan ngomong kasar kasar yaah. ntah kesiapapun itu, kalau udah di puncaknya.. mending pergi aja. okayy ^_^",
   "Senang bisa kenal dengan kamu, dan selalu memberi dampak positif bagi sekitar kamu yaa",
-  "Byee",
+  "Byee. sudah bole klik tombol 'selesai' ya",
 ];
 
 function fakeMessage() {

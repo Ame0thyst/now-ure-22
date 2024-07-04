@@ -288,7 +288,7 @@ const Pin = () => {
     React.createElement(
       "h3",
       { id: "app-pin-label" },
-      "Hari Ini ",
+      "Waktu Lahir Kmu ✨ ",
       getErrorText(),
       " ",
       getCancelText()
